@@ -1,0 +1,129 @@
+    /* CSS personalizado para aplicar opacidade à barra de navegação e texto */
+    
+    .navbar {
+        background-color: rgba(235, 235, 235, 0.75) !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+    
+    .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.75) !important;
+        /* Cor do texto com opacidade */
+    }
+    
+    .container-fluid {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .row1 {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    * {
+        margin: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .row:last-child {
+        flex: 1;
+    }
+    
+    .typewriter h1 {
+        overflow: hidden;
+        border-right: .15em solid rgb(0, 0, 0);
+        white-space: nowrap;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        color: rgb(255, 255, 255);
+        vertical-align: center;
+        font-size: 250px;
+    }
+    /* The typing effect */
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+        to {
+            width: 100%
+        }
+    }
+    /* The typewriter cursor effect */
+    
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent
+        }
+        50% {
+            border-color: rgb(255, 255, 255);
+        }
+    }
+    
+    .search-box {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+    }
+    
+    .input-search {
+        height: 50px;
+        width: 50px;
+        border-style: none;
+        padding: 10px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 25px;
+        transition: all .5s ease-in-out;
+        background-color: #ffffff;
+        padding-right: 40px;
+        color: #000000;
+    }
+    
+    .input-search::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+    
+    .btn-search {
+        width: 50px;
+        height: 50px;
+        border-style: none;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color: #000000;
+        background-color: transparent;
+        pointer-events: painted;
+    }
+    
+    .btn-search:focus~.input-search {
+        width: 300px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+    
+    .input-search:focus {
+        width: 300px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
