@@ -1,191 +1,277 @@
 /* CSS personalizado para aplicar opacidade à barra de navegação e texto */
 
 .navbar {
-    background-color: rgba(235, 235, 235, 0.75) !important;
-    width: 100% !important;
-    position: relative !important;
+	background-color: rgba(235, 235, 235, 0.75) !important;
+	width: 100% !important;
+	position: relative !important;
+
 }
 
 .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.75) !important;
-    /* Cor do texto com opacidade */
+	color: rgba(0, 0, 0, 0.75) !important;
+	/* Cor do texto com opacidade */
 }
 
 .container-fluid {
-    display: flex;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+	display: flex;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .row1 {
-    background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
 }
 
-* {
-    margin: 0;
+.row2 {
+	background-image: url("rain-5234004_1920.jpg");
 }
+
+
 
 html,
 body {
-    height: 100%;
-    overflow: hidden;
+	height: 100%;
+	overflow: hidden;
+    margin: 0;
+	padding: 0 !important;
+	min-height: 100%;
 }
 
 .row:last-child {
-    flex: 1;
+	flex: 1;
 }
 
 .typewriter h1 {
-    overflow: hidden;
-    border-right: .15em solid rgb(0, 0, 0);
-    white-space: nowrap;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-    color: rgb(255, 255, 255);
-    vertical-align: center;
-    font-size: 200px;
+	overflow: hidden;
+	border-right: .15em solid rgb(0, 0, 0);
+	white-space: nowrap;
+	letter-spacing: .15em;
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+	color: rgb(255, 255, 255);
+	vertical-align: center;
+	font-size: 200px;
 }
 
 @media (max-width: 1000px) {
-    .input-search {
-        height: 40px;
-        width: 250px !important;
-        border-style: none;
-        padding: 10px;
-        font-size: 12px;
-        letter-spacing: 2px;
-        outline: none;
-        border-radius: 25px;
-        transition: all .5s ease-in-out;
-        background-color: #ffffff;
-        padding-right: 40px;
-        color: #000000;
-    }
+	.input-search {
+		height: 40px;
+		width: 250px !important;
+		border-style: none;
+		padding: 10px;
+		font-size: 12px;
+		letter-spacing: 2px;
+		outline: none;
+		border-radius: 25px;
+		transition: all .5s ease-in-out;
+		background-color: #ffffff;
+		padding-right: 40px;
+		color: #000000;
+	}
 }
 
 @media (max-width: 274px) {
-    .input-search {
-        height: 40px;
-        width: 200px !important;
-        border-style: none;
-        padding: 10px;
-        font-size: 12px;
-        letter-spacing: 2px;
-        outline: none;
-        border-radius: 25px;
-        transition: all .5s ease-in-out;
-        background-color: #ffffff;
-        padding-right: 40px;
-        color: #000000;
-    }
+	.input-search {
+		height: 40px;
+		width: 200px !important;
+		border-style: none;
+		padding: 10px;
+		font-size: 12px;
+		letter-spacing: 2px;
+		outline: none;
+		border-radius: 25px;
+		transition: all .5s ease-in-out;
+		background-color: #ffffff;
+		padding-right: 40px;
+		color: #000000;
+	}
 }
-
 
 /* Adicionado estilo para telas menores */
 
 @media (max-width: 750px) {
-    .typewriter h1 {
-        font-size: 50px;
-        /* Tamanho menor para telas menores */
-    }
+	.typewriter h1 {
+		font-size: 50px;
+		/* Tamanho menor para telas menores */
+	}
 }
 
 @media (min-width: 750px) and (max-width: 1400px) {
-    .typewriter h1 {
-        font-size: 100px;
-        /* Tamanho menor para telas menores */
-    }
+	.typewriter h1 {
+		font-size: 100px;
+		/* Tamanho menor para telas menores */
+	}
 }
 
 @media (max-width: 300px) {
-    .typewriter h1 {
-        font-size: 40px;
-        /* Tamanho menor para telas menores */
-    }
+	.typewriter h1 {
+		font-size: 40px;
+		/* Tamanho menor para telas menores */
+	}
 }
-
 
 /* The typing effect */
 
 @keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
 }
-
 
 /* The typewriter cursor effect */
 
 @keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent
-    }
-    50% {
-        border-color: rgb(255, 255, 255);
-    }
+	from,
+	to {
+		border-color: transparent
+	}
+	50% {
+		border-color: rgb(255, 255, 255);
+	}
 }
 
 .search-box {
-    width: fit-content;
-    height: fit-content;
-    position: relative;
+	width: fit-content;
+	height: fit-content;
+	position: relative;
 }
 
 .input-search {
-    height: 50px;
-    width: 50px;
-    border-style: none;
-    padding: 10px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    outline: none;
-    border-radius: 25px;
-    transition: all .5s ease-in-out;
-    background-color: #ffffff;
-    padding-right: 40px;
-    color: #000000;
+	height: 50px;
+	width: 50px;
+	border-style: none;
+	padding: 10px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	outline: none;
+	border-radius: 25px;
+	transition: all .5s ease-in-out;
+	background-color: #ffffff;
+	padding-right: 40px;
+	color: #000000;
 }
 
 .input-search::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 100;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 100;
 }
 
 .btn-search {
-    width: 50px;
-    height: 50px;
-    border-style: none;
-    font-size: 20px;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50%;
-    position: absolute;
-    right: 0px;
-    color: #000000;
-    background-color: transparent;
-    pointer-events: painted;
+	width: 50px;
+	height: 50px;
+	border-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	right: 0px;
+	color: #000000;
+	background-color: transparent;
+	pointer-events: painted;
 }
 
 .btn-search:focus~.input-search {
-    width: 300px;
-    border-radius: 0px;
-    background-color: transparent;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+	width: 300px;
+	border-radius: 0px;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
 .input-search:focus {
-    width: 300px;
-    border-radius: 0px;
-    background-color: transparent;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+	width: 300px;
+	border-radius: 0px;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+.card-outer {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 15%;
+	float: left;
+	margin-left: 10px;
+	align-self: center;
+	border-radius: 20px !important;
+	margin-top: 100px;
+	transition: transform .2s; /* Animation */
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.typewriter2 h1 {
+	overflow: hidden;
+	border-right: .15em solid rgb(0, 0, 0);
+	white-space: nowrap;
+	letter-spacing: .15em;
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+	color: rgb(255, 255, 255);
+	vertical-align: center;
+	font-size: 100px;
+	margin-top: 100px;
+}
+
+/* Adicionado estilo para telas menores */
+
+@media (max-width: 750px) {
+	.typewriter2 h1 {
+		font-size: 50px;
+		/* Tamanho menor para telas menores */
+	}
+}
+
+@media (min-width: 750px) and (max-width: 1400px) {
+	.typewriter2 h1 {
+		font-size: 100px;
+		/* Tamanho menor para telas menores */
+	}
+}
+
+@media (max-width: 300px) {
+	.typewriter2 h1 {
+		font-size: 40px;
+		/* Tamanho menor para telas menores */
+	}
+}
+
+/* The typing effect */
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent
+	}
+	50% {
+		border-color: rgb(255, 255, 255);
+	}
 }
